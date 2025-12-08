@@ -11,7 +11,7 @@
 
     /* Hero */
     header {
-        height:100vh;
+        min-height:100vh;
         background: radial-gradient(circle at 20% 30%, #0aa 0%, #0b1f3a 70%);
         display:flex; flex-direction:column;
         justify-content:center; align-items:center;
@@ -29,7 +29,10 @@
     h2 { text-align:center; font-size:2.2rem; margin-bottom:40px; color:#0b1f3a; }
 
     /* About Me */
-    #chi-sono { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); align-items:center; gap:40px; }
+    #chi-sono {
+        display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+        align-items:center; gap:50px;
+    }
     #chi-sono img {
         width:280px; border-radius:50%;
         box-shadow:0 8px 25px rgba(0,0,0,0.25);
@@ -37,25 +40,33 @@
     }
     #chi-sono img:hover { transform:scale(1.05); }
 
-    /* Dual Image Box */
+    /* Dual Images */
     .dual-images {
-        display:flex; flex-direction:column; gap:25px; align-items:center;
+        display:flex; flex-direction:column; gap:30px; align-items:center;
     }
     .dual-images img.bio-img {
-        width:320px;
+        width:100%; max-width:420px;
         border-radius:18px;
         box-shadow:0 8px 25px rgba(0,0,0,0.25);
         transition:0.3s;
+        object-fit:contain;
     }
-    .dual-images img.bio-img:hover { transform:scale(1.04); }
+    .dual-images img.bio-img:hover { transform:scale(1.03); }
 
-    /* Bio-Inspired Box */
+    /* Bio-Inspired Explanation Box */
     .bio-box {
         background:#ecf9f9; padding:40px; border-radius:18px;
         box-shadow:0 5px 20px rgba(0,0,0,0.05);
         margin-top:30px;
     }
     .bio-box h3 { color:#088; margin-bottom:20px; }
+
+    /* New short section about models */
+    .mini-section {
+        background:#ffffff; padding:40px; margin-top:50px;
+        border-radius:16px; box-shadow:0 5px 18px rgba(0,0,0,0.06);
+    }
+    .mini-section h3 { color:#0b1f3a; margin-bottom:15px; text-align:center; }
 
     /* Services */
     .services {
@@ -101,7 +112,7 @@
         </p>
         <p>
             Autore del framework <strong>Mycelial_Net</strong> e delle <strong>Self-Aware Deep Neural Networks</strong>,
-            reti neurali dotate di meta-consapevolezza interna e capacità valutative simili ai sistemi biologici.
+            reti neurali con meta-consapevolezza interna e capacità valutative simili ai sistemi biologici.
         </p>
         <ul>
             <li>Oltre <strong>20 anni di esperienza</strong> in AI, deep learning e modellazione complessa.</li>
@@ -113,7 +124,7 @@
         <div class="bio-box">
             <h3>Perché un’AI bio-ispirata?</h3>
             <p>
-                Perché i sistemi naturali – reti miceliari, cervello umano, reti dopaminergiche – sono strutture perfette per l’adattamento, l’apprendimento e la decisione.
+                I sistemi naturali – reti miceliari, cervello umano, reti dopaminergiche – sono strutture perfette per adattamento, apprendimento e decisione.
                 Le mie architetture imitano questi meccanismi creando modelli:
             </p>
             <ul>
@@ -124,6 +135,21 @@
             </ul>
         </div>
     </div>
+</section>
+
+<!-- Mini Section on Bio-Inspired Models -->
+<section class="mini-section">
+    <h3>Cosa sono i modelli Bio‑Inspired Deep Learning?</h3>
+    <p>
+        I modelli bio-ispirati di deep learning traggono ispirazione da sistemi naturali come il micelio dei funghi,
+        il cervello umano e le reti dopaminergiche. A differenza delle reti neurali tradizionali, questi modelli
+        integrano dinamiche evolutive, auto-regolazione, entropia distribuita e meccanismi di valutazione interna.
+    </p>
+    <p>
+        <strong>Mycelial_Net</strong> è un’architettura che replica il comportamento delle reti miceliari reali:
+        crescita ramificata, adattamento locale, comunicazione distribuita e resilienza emergente.
+        È progettato per gestire problemi complessi in modo naturale, adattivo e altamente robusto.
+    </p>
 </section>
 
 <section id="servizi">
