@@ -6,68 +6,75 @@
 <title>AI Consulting Milano – Paolo Dell'Aversana</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
-    /* Reset */
+    /* Reset base */
     * { margin:0; padding:0; box-sizing: border-box; }
     body { font-family: 'Poppins', sans-serif; line-height:1.6; color:#333; }
     a { text-decoration:none; color:#0b1f3a; }
- 
+
     /* Header / Hero */
     header { height:100vh; background: linear-gradient(135deg,#0b1f3a,#0aa); display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-align:center; padding:20px; }
     header h1 { font-size:3rem; margin-bottom:20px; }
     header p { font-size:1.3rem; margin-bottom:30px; }
     .cta { padding:15px 30px; background:#fff; color:#0b1f3a; border-radius:8px; font-weight:600; transition:0.3s; }
     .cta:hover { background:#0aa; color:white; }
- 
-    /* Sections */
+
+    /* Sections generali */
     section { padding:80px 20px; max-width:1000px; margin:auto; }
     section h2 { font-size:2rem; color:#0b1f3a; margin-bottom:30px; text-align:center; }
     section p, section ul { font-size:1.1rem; margin-bottom:20px; }
+    ul { padding-left:20px; }
 
-    <section id="chi-sono" style="padding:80px 20px; max-width:1000px; margin:auto; display:flex; flex-wrap:wrap; align-items:center; gap:40px;">
-    <!-- Foto -->
-    <div style="flex:1 1 300px; text-align:center;">
-        <img src="tuafoto.jpg" alt="Paolo Dell'Aversana" style="width:250px; height:auto; border-radius:50%; box-shadow:0 5px 15px rgba(0,0,0,0.2);">
-    </div>
-    
-    <!-- Testo -->
-    <div style="flex:2 1 400px;">
-        <h2 style="color:#0b1f3a; margin-bottom:20px;">Chi Sono</h2>
-        <p>Sono Paolo Dell’Aversana, esperto internazionale in <strong>Intelligenza Artificiale e Deep Learning</strong> con oltre 20 anni di esperienza nella modellazione e analisi di dati complessi. Ho applicato le mie competenze in diversi settori:</p>
-        <ul>
-            <li>Analisi di dati medici per diagnostica avanzata e decision support.</li>
-            <li>Modellazione fisico-matematica di sistemi complessi.</li>
-            <li>Analisi di segnali e trasformazione di dati sonori in applicazioni AI.</li>
-            <li>Pubblicazioni scientifiche: oltre 150 articoli su riviste internazionali e diversi libri.</li>
-        </ul>
-        <p>La mia esperienza combina una solida formazione scientifica con applicazioni pratiche, creando soluzioni AI innovative per aziende, ospedali e progetti di ricerca internazionale.</p>
-    </div>
-</section>
-
- 
     /* Services Grid */
     .services { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
     .service-box { background:#f4f6fa; padding:25px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.05); transition:0.3s; }
     .service-box:hover { transform: translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.1); }
     .service-box h3 { margin-bottom:15px; color:#0aa; }
- 
+
+    /* Chi Sono / About Me */
+    #chi-sono { display:flex; flex-wrap:wrap; align-items:center; gap:40px; margin-bottom:60px; }
+    #chi-sono div { flex:1 1 300px; }
+    #chi-sono img { width:250px; height:auto; border-radius:50%; box-shadow:0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s; }
+    #chi-sono img:hover { transform: scale(1.05); }
+
     /* Footer */
     footer { text-align:center; padding:40px 20px; background:#0b1f3a; color:white; }
- 
+
     /* Responsive */
     @media (max-width:768px){
         header h1 { font-size:2.2rem; }
         header p { font-size:1.1rem; }
+        #chi-sono { flex-direction:column; text-align:center; }
     }
 </style>
 </head>
 <body>
- 
+
 <header>
     <h1>AI Consulting & Training</h1>
     <p>Soluzioni avanzate di Intelligenza Artificiale per aziende, ospedali e istituzioni pubbliche a Milano.</p>
     <a href="#contatti" class="cta">Contattami</a>
 </header>
- 
+
+<!-- Sezione Chi Sono / About Me -->
+<section id="chi-sono">
+    <div style="text-align:center;">
+        <img src="paolo.jpg" alt="Paolo Dell'Aversana">
+    </div>
+    <div>
+        <h2>Chi Sono</h2>
+        <p>Sono Paolo Dell’Aversana, esperto internazionale in <strong>Intelligenza Artificiale e Deep Learning</strong> con oltre 20 anni di esperienza nella modellazione e analisi di dati complessi. Ho sviluppato soluzioni innovative in diversi settori:</p>
+        <ul>
+            <li>Analisi di dati medici per diagnostica avanzata e decision support.</li>
+            <li>Modellazione fisico-matematica avanzata di sistemi complessi.</li>
+            <li>Analisi di segnali e trasformazione di dati sonori in applicazioni AI.</li>
+            <li>Applicazioni industriali, ambientali e scientifiche con approcci self-aware e reti dopaminergiche.</li>
+            <li>Pubblicazioni scientifiche: oltre 150 articoli su riviste internazionali e diversi libri.</li>
+        </ul>
+        <p>La mia esperienza combina formazione scientifica approfondita con applicazioni pratiche, creando soluzioni AI innovative e affidabili per aziende, ospedali e progetti di ricerca internazionale.</p>
+    </div>
+</section>
+
+<!-- Sezione Servizi -->
 <section id="servizi">
     <h2>Servizi</h2>
     <div class="services">
@@ -85,22 +92,23 @@
         </div>
     </div>
 </section>
- 
+
+<!-- Sezione Perché scegliere me -->
 <section id="perche">
     <h2>Perché scegliere me</h2>
     <p>Oltre 20 anni di esperienza in deep learning, sistemi complessi, modellazione avanzata e integrazione AI multidisciplinare per applicazioni reali.</p>
 </section>
- 
+
+<!-- Sezione Contatti -->
 <section id="contatti">
     <h2>Contatti</h2>
-    <p>Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>    <p>Disponibile per consulenze a Milano o da remoto.</p>
+    <p>Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>
+    <p>Disponibile per consulenze a Milano o da remoto.</p>
 </section>
- 
+
 <footer>
     <p>© 2025 Paolo Dell'Aversana – AI Consulting Milano</p>
 </footer>
- 
+
 </body>
 </html>
-
-
