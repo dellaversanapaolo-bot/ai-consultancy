@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Consulting Milano – Dell'Aversana</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Consulting Milano – Paolo Dell'Aversana</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height:1.6; color:#333; }
+    a { text-decoration:none; color:#0b1f3a; }
+ 
+    /* Header / Hero */
+    header { height:100vh; background: linear-gradient(135deg,#0b1f3a,#0aa); display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-align:center; padding:20px; }
+    header h1 { font-size:3rem; margin-bottom:20px; }
+    header p { font-size:1.3rem; margin-bottom:30px; }
+    .cta { padding:15px 30px; background:#fff; color:#0b1f3a; border-radius:8px; font-weight:600; transition:0.3s; }
+    .cta:hover { background:#0aa; color:white; }
+ 
+    /* Sections */
+    section { padding:80px 20px; max-width:1000px; margin:auto; }
+    section h2 { font-size:2rem; color:#0b1f3a; margin-bottom:30px; text-align:center; }
+    section p, section ul { font-size:1.1rem; margin-bottom:20px; }
+ 
+    /* Services Grid */
+    .services { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .service-box { background:#f4f6fa; padding:25px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.05); transition:0.3s; }
+    .service-box:hover { transform: translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.1); }
+    .service-box h3 { margin-bottom:15px; color:#0aa; }
+ 
+    /* Footer */
+    footer { text-align:center; padding:40px 20px; background:#0b1f3a; color:white; }
+ 
+    /* Responsive */
+    @media (max-width:768px){
+        header h1 { font-size:2.2rem; }
+        header p { font-size:1.1rem; }
+    }
+</style>
 </head>
-
 <body>
-    <header class="hero">
-        <h1>AI Consulting & Training</h1>
-        <p>Soluzioni di Intelligenza Artificiale per Aziende, Ospedali e Pubbliche Amministrazioni a Milano</p>
-        <a href="#contatti" class="cta">Contattami</a>
-    </header>
-
-    <section class="section">
-        <h2>Servizi</h2>
-        <ul>
-            <li>Consulenza strategica su AI e automazione</li>
-            <li>Training personalizzati per team tecnici e non tecnici</li>
-            <li>Audit tecnologico per processi aziendali</li>
-            <li>Assistenza a ospedali e strutture sanitarie nella digitalizzazione</li>
-            <li>Implementazione progetti AI e modelli su misura</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Perché scegliere me</h2>
-        <p>20+ anni di esperienza tra geofisica, machine learning avanzato, deep learning, sistemi complessi, progettazione AI e integrazioni multidisciplinari.</p>
-    </section>
-
-    <section class="section" id="contatti">
-        <h2>Contatti</h2>
-        <p>Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>
-        <p>Disponibile per consulenze in presenza su Milano o da remoto.</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Paolo Dell'Aversana – AI Consulting Milano</p>
-    </footer>
+ 
+<header>
+    <h1>AI Consulting & Training</h1>
+    <p>Soluzioni avanzate di Intelligenza Artificiale per aziende, ospedali e istituzioni pubbliche a Milano.</p>
+    <a href="#contatti" class="cta">Contattami</a>
+</header>
+ 
+<section id="servizi">
+    <h2>Servizi</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Formazione AI</h3>
+            <p>Corsi personalizzati per manager, team tecnici e medici. Approcci chiari, con focus su AI applicata, machine learning e normative europee.</p>
+        </div>
+        <div class="service-box">
+            <h3>Consulenza Strategica</h3>
+            <p>Analisi dei processi, identificazione degli use-case, roadmap operativa e valutazione dei costi/benefici per integrare AI nei flussi decisionali.</p>
+        </div>
+        <div class="service-box">
+            <h3>Prototipi & PoC</h3>
+            <p>Sviluppo di modelli AI avanzati, reti self-aware, digital twin, anomaly detection e applicazioni su misura per aziende e ospedali.</p>
+        </div>
+    </div>
+</section>
+ 
+<section id="perche">
+    <h2>Perché scegliere me</h2>
+    <p>Oltre 20 anni di esperienza in deep learning, sistemi complessi, modellazione avanzata e integrazione AI multidisciplinare per applicazioni reali.</p>
+</section>
+ 
+<section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>    <p>Disponibile per consulenze a Milano o da remoto.</p>
+</section>
+ 
+<footer>
+    <p>© 2025 Paolo Dell'Aversana – AI Consulting Milano</p>
+</footer>
+ 
 </body>
 </html>
+
