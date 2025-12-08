@@ -25,17 +25,29 @@
     }
     .cta:hover { background:#0aa; color:#fff; }
 
-    section { padding:80px 20px; max-width:1100px; margin:auto; }
+    section { padding:80px 20px; max-width:1200px; margin:auto; }
     h2 { text-align:center; font-size:2.2rem; margin-bottom:40px; color:#0b1f3a; }
 
     /* About Me */
-    #chi-sono { display:flex; flex-wrap:wrap; align-items:center; gap:50px; }
+    #chi-sono { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); align-items:center; gap:40px; }
     #chi-sono img {
         width:280px; border-radius:50%;
         box-shadow:0 8px 25px rgba(0,0,0,0.25);
         transition:0.3s;
     }
     #chi-sono img:hover { transform:scale(1.05); }
+
+    /* Dual Image Box */
+    .dual-images {
+        display:flex; flex-direction:column; gap:25px; align-items:center;
+    }
+    .dual-images img.bio-img {
+        width:320px;
+        border-radius:18px;
+        box-shadow:0 8px 25px rgba(0,0,0,0.25);
+        transition:0.3s;
+    }
+    .dual-images img.bio-img:hover { transform:scale(1.04); }
 
     /* Bio-Inspired Box */
     .bio-box {
@@ -57,18 +69,9 @@
     }
     .service-box:hover { transform:translateY(-8px); }
 
-    /* Contacts */
-    #contatti p { text-align:center; font-size:1.2rem; }
-
     footer {
         margin-top:60px; background:#0b1f3a; color:#fff;
         text-align:center; padding:40px 20px;
-    }
-
-    @media (max-width:768px){
-        header h1 { font-size:2.3rem; }
-        header p { font-size:1.05rem; }
-        #chi-sono { text-align:center; flex-direction:column; }
     }
 </style>
 </head>
@@ -78,48 +81,45 @@
     <h1>Bio-Inspired AI & Deep Learning</h1>
     <p>
         Mycelial_Net, Self-Aware Deep Neural Networks, modelli dopaminergici e sistemi intelligenti ispirati alla rete dei funghi e alla coscienza umana.
-        Soluzioni uniche al mondo sviluppate da Paolo Dell’Aversana, ricercatore indipendente.
+        Soluzioni uniche sviluppate da Paolo Dell’Aversana.
     </p>
     <a href="#contatti" class="cta">Contattami</a>
 </header>
 
 <section id="chi-sono">
-    <div style="text-align:center;">
+
+    <div class="dual-images">
         <img src="Paolo.jpg" alt="Paolo Dell'Aversana">
+        <img src="GA_fin.jpg" class="bio-img" alt="Bio Inspired AI">
     </div>
 
     <div>
         <h2>Chi Sono</h2>
         <p>
             Sono <strong>Paolo Dell’Aversana</strong>, fisico-matematico, geofisico e ricercatore indipendente,
-            pioniere internazionale dei modelli bio-ispirati applicati all’Intelligenza Artificiale.
+            pioniere internazionale nei modelli bio-ispirati applicati all’Intelligenza Artificiale.
         </p>
-
         <p>
-            Sono l’autore del framework <strong>Mycelial_Net</strong> e delle
-            <strong>Self-Aware Deep Neural Networks</strong>, reti neurali con consapevolezza interna e capacità
-            di auto-valutazione. Ho introdotto tecniche che integrano
-            neuroscienze, reti fungine, sistemi dopaminergici biologici e deep learning.
+            Autore del framework <strong>Mycelial_Net</strong> e delle <strong>Self-Aware Deep Neural Networks</strong>,
+            reti neurali dotate di meta-consapevolezza interna e capacità valutative simili ai sistemi biologici.
         </p>
-
         <ul>
             <li>Oltre <strong>20 anni di esperienza</strong> in AI, deep learning e modellazione complessa.</li>
-            <li>Più di <strong>150 pubblicazioni scientifiche internazionali</strong> e vari libri tecnici.</li>
-            <li>Esperienza avanzata in analisi dei segnali, ingegneria del suono, analisi di dati medici e diagnostica medica, modelli di ottimizzazione matematica, sistemi complessi.</li>
-            <li>Autore di tecnologie AI uniche e non presenti sul mercato.</li>
+            <li>Più di <strong>150 pubblicazioni scientifiche internazionali</strong> e vari libri.</li>
+            <li>Expertise in analisi del suono, segnali complessi, diagnostica medica, ottimizzazione matematica e modelli fisico‑neurali.</li>
+            <li>Sviluppatore di tecnologie AI uniche al mondo, fuori dai paradigmi tradizionali del machine learning.</li>
         </ul>
 
         <div class="bio-box">
             <h3>Perché un’AI bio-ispirata?</h3>
             <p>
-                Perché i sistemi naturali – reti miceliari, cervello umano, reti dopaminergiche – sono
-                straordinariamente efficienti nel prendere decisioni, adattarsi, esplorare, apprendere.
-                Le mie architetture AI imitano questi meccanismi, creando modelli:
+                Perché i sistemi naturali – reti miceliari, cervello umano, reti dopaminergiche – sono strutture perfette per l’adattamento, l’apprendimento e la decisione.
+                Le mie architetture imitano questi meccanismi creando modelli:
             </p>
             <ul>
                 <li>più resilienti</li>
-                <li>più intelligenti</li>
                 <li>più interpretabili</li>
+                <li>più intelligenti</li>
                 <li>più vicini alla “coscienza computazionale”</li>
             </ul>
         </div>
@@ -130,46 +130,29 @@
     <h2>Servizi Bio-Inspired AI</h2>
 
     <div class="services">
-
         <div class="service-box">
             <h3>Mycelial_Net Training</h3>
-            <p>
-                Formazione su modelli bio-ispirati, reti fungine, entropia distribuita e architetture adattive.
-                Percorsi per aziende, ricercatori e team tecnici.
-            </p>
+            <p>Formazione tecnica avanzata su reti fungine, entropia distribuita e modelli adattivi.</p>
         </div>
-
         <div class="service-box">
             <h3>Self-Aware Deep Learning</h3>
-            <p>
-                Implementazione di reti auto-consapevoli, con meccanismi interni di meta-valutazione,
-                dopamina digitale e ottimizzazione autonoma.
-            </p>
+            <p>Reti neurali con meta-consapevolezza, dopamina digitale e valutazione interna dello stato.</p>
         </div>
-
         <div class="service-box">
             <h3>AI Dopaminergica</h3>
-            <p>
-                Sistemi di decision-making ispirati al cervello biologico, con reward non lineari,
-                esplorazione intelligente e apprendimento metacognitivo.
-            </p>
+            <p>Sistemi decisionali ispirati ai circuiti biologici dopaminergici per apprendimento efficiente.</p>
         </div>
-
         <div class="service-box">
-            <h3>PoC e Soluzioni Uniche</h3>
-            <p>
-                Creazione di prototipi esclusivi per aziende, ospedali e istituzioni
-                basati su architetture non presenti sul mercato IT tradizionale.
-            </p>
+            <h3>Prototipi e Soluzioni Esclusive</h3>
+            <p>Progetti per aziende e ospedali basati su architetture non presenti sul mercato IT tradizionale.</p>
         </div>
-
     </div>
 </section>
 
 <section id="contatti">
     <h2>Contatti</h2>
-    <p>Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>
-    <p>Disponibile per consulenze da remoto e in presenza a Milano.</p>
+    <p style="text-align:center; font-size:1.2rem;">Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>
+    <p style="text-align:center;">Disponibile per consulenze in presenza a Milano e da remoto.</p>
 </section>
 
 <footer>
