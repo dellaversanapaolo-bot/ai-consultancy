@@ -45,7 +45,7 @@
         display:flex; flex-direction:column; gap:30px; align-items:center;
     }
     .dual-images img.bio-img {
-        width:100%; max-width:420px;
+        width:100%; max-width:480px;
         border-radius:18px;
         box-shadow:0 8px 25px rgba(0,0,0,0.25);
         transition:0.3s;
@@ -53,7 +53,7 @@
     }
     .dual-images img.bio-img:hover { transform:scale(1.03); }
 
-    /* Bio-Inspired Explanation Box */
+    /* Bio Box */
     .bio-box {
         background:#ecf9f9; padding:40px; border-radius:18px;
         box-shadow:0 5px 20px rgba(0,0,0,0.05);
@@ -61,12 +61,21 @@
     }
     .bio-box h3 { color:#088; margin-bottom:20px; }
 
-    /* New short section about models */
+    /* Mini section */
     .mini-section {
         background:#ffffff; padding:40px; margin-top:50px;
         border-radius:16px; box-shadow:0 5px 18px rgba(0,0,0,0.06);
     }
     .mini-section h3 { color:#0b1f3a; margin-bottom:15px; text-align:center; }
+
+    /* Publications */
+    .pubs {
+        background:#f0f7ff; padding:50px; border-radius:18px;
+        box-shadow:0 5px 18px rgba(0,0,0,0.06);
+        margin-top:60px;
+    }
+    .pubs a { color:#064f9c; font-weight:600; }
+    .pubs a:hover { text-decoration:underline; }
 
     /* Services */
     .services {
@@ -84,6 +93,7 @@
         margin-top:60px; background:#0b1f3a; color:#fff;
         text-align:center; padding:40px 20px;
     }
+    footer small { display:block; margin-top:10px; font-size:0.8rem; opacity:0.8; }
 </style>
 </head>
 <body>
@@ -98,7 +108,6 @@
 </header>
 
 <section id="chi-sono">
-
     <div class="dual-images">
         <img src="Paolo.jpg" alt="Paolo Dell'Aversana">
         <img src="GA_fin.jpg" class="bio-img" alt="Bio Inspired AI">
@@ -117,15 +126,14 @@
         <ul>
             <li>Oltre <strong>20 anni di esperienza</strong> in AI, deep learning e modellazione complessa.</li>
             <li>Più di <strong>150 pubblicazioni scientifiche internazionali</strong> e vari libri.</li>
-            <li>Expertise in analisi del suono, segnali complessi, diagnostica medica, ottimizzazione matematica e modelli fisico‑neurali.</li>
-            <li>Sviluppatore di tecnologie AI uniche al mondo, fuori dai paradigmi tradizionali del machine learning.</li>
+            <li>Expertise in analisi del suono, segnali complessi, diagnostica medica, ottimizzazione matematica e modelli fisico-neurali.</li>
+            <li>Sviluppatore di tecnologie AI uniche al mondo, fuori dai paradigmi del machine learning tradizionale.</li>
         </ul>
 
         <div class="bio-box">
             <h3>Perché un’AI bio-ispirata?</h3>
             <p>
                 I sistemi naturali – reti miceliari, cervello umano, reti dopaminergiche – sono strutture perfette per adattamento, apprendimento e decisione.
-                Le mie architetture imitano questi meccanismi creando modelli:
             </p>
             <ul>
                 <li>più resilienti</li>
@@ -137,53 +145,38 @@
     </div>
 </section>
 
-<!-- Mini Section on Bio-Inspired Models -->
 <section class="mini-section">
-    <h3>Cosa sono i modelli Bio‑Inspired Deep Learning?</h3>
+    <h3>Cosa sono i modelli Bio-Inspired Deep Learning?</h3>
     <p>
-        I modelli bio-ispirati di deep learning traggono ispirazione da sistemi naturali come il micelio dei funghi,
-        il cervello umano e le reti dopaminergiche. A differenza delle reti neurali tradizionali, questi modelli
-        integrano dinamiche evolutive, auto-regolazione, entropia distribuita e meccanismi di valutazione interna.
+        I modelli bio-ispirati traggono ispirazione dal micelio, dal cervello umano e dai sistemi dopaminergici.
+        Integrano auto-regolazione, entropia distribuita, crescita adattiva e valutazione interna.
     </p>
     <p>
-        <strong>Mycelial_Net</strong> è un’architettura che replica il comportamento delle reti miceliari reali:
-        crescita ramificata, adattamento locale, comunicazione distribuita e resilienza emergente.
-        È progettato per gestire problemi complessi in modo naturale, adattivo e altamente robusto.
+        <strong>Mycelial_Net</strong> replica il comportamento delle reti miceliari reali: crescita ramificata,
+        comunicazione distribuita e resilienza emergente.
+    </p>
+</section>
+
+<section class="pubs">
+    <h2>Pubblicazioni</h2>
+    <p style="text-align:center; font-size:1.15rem;">
+        Profilo completo disponibile su:
+    </p>
+
+    <p style="text-align:center; margin-top:15px; font-size:1.2rem;">
+        🔗 <a href="https://scholar.google.com/citations?user=zGxZsJ8AAAAJ&hl=it" target="_blank">Google Scholar – Paolo Dell’Aversana</a>
+    </p>
+
+    <p style="text-align:center; margin-top:10px; font-size:1.2rem;">
+        🔗 <a href="https://www.researchgate.net/profile/Paolo-Dellaversana" target="_blank">ResearchGate – Profilo</a>
     </p>
 </section>
 
 <section id="servizi">
     <h2>Servizi Bio-Inspired AI</h2>
-
     <div class="services">
         <div class="service-box">
             <h3>Mycelial_Net Training</h3>
-            <p>Formazione tecnica avanzata su reti fungine, entropia distribuita e modelli adattivi.</p>
+            <p>Formazione avanzata su reti fungine, entropia distribuita e modelli adattivi.</p>
         </div>
-        <div class="service-box">
-            <h3>Self-Aware Deep Learning</h3>
-            <p>Reti neurali con meta-consapevolezza, dopamina digitale e valutazione interna dello stato.</p>
-        </div>
-        <div class="service-box">
-            <h3>AI Dopaminergica</h3>
-            <p>Sistemi decisionali ispirati ai circuiti biologici dopaminergici per apprendimento efficiente.</p>
-        </div>
-        <div class="service-box">
-            <h3>Prototipi e Soluzioni Esclusive</h3>
-            <p>Progetti per aziende e ospedali basati su architetture non presenti sul mercato IT tradizionale.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contatti">
-    <h2>Contatti</h2>
-    <p style="text-align:center; font-size:1.2rem;">Email: <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>
-    <p style="text-align:center;">Disponibile per consulenze in presenza a Milano e da remoto.</p>
-</section>
-
-<footer>
-    <p>© 2025 Paolo Dell'Aversana – Bio-Inspired AI Research & Consulting</p>
-</footer>
-
-</body>
-</html>
+        <div class="
