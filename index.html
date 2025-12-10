@@ -72,16 +72,25 @@
     }
 
     /* IMMAGINE CENTRALE */
-    .image-row {
-        display:flex;
-        justify-content:center;
-        margin-top:25px;
-    }
-    .image-row img {
-        max-width:20%;
-        border-radius:12px;
-        box-shadow:0 5px 20px rgba(0,0,0,0.3);
-        transition:transform 0.35s;
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;       /* distanza tra le immagini */
+    margin-top: 25px;
+    flex-wrap: wrap;  /* si adatta agli schermi piccoli */
+}
+
+.image-row img {
+    max-width: 100%;  /* l'immagine non supera la larghezza naturale */
+    width: auto;      /* conserva proporzioni orizzontali */
+    height: auto;     /* conserva proporzioni verticali */
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.35s;
+    display: block;   /* evita spazi indesiderati sotto le immagini */
+    max-height: 400px; /* regola l'altezza massima */
+}
+
     }
     .image-row img:hover {
         transform:scale(1.03);
@@ -150,7 +159,8 @@
     <h2>Chi sono</h2>
     <p>Geologo, Fisico e innovatore nel campo dell'intelligenza artificiale, autore di nuovi paradigmi di IA "bio-ispirati" e sviluppatore di approcci multidisciplinari per l'ottimizzazione dei processi aziendali e industriali.</p>
 
-    
+
+   
     <div class="image-row">
         <img src="GA_fin.jpg" alt="Bio-inspired Approach" />
         <img src="Paolo.jpg" alt="Paolo Dell'Aversana" />
@@ -215,6 +225,7 @@
 
 </body>
 </html>
+
 
 
 
