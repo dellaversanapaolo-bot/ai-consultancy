@@ -72,6 +72,9 @@
     }
 
     /* IMMAGINE CENTRALE */
+
+
+
 .image-row {
     display: flex;
     justify-content: center;
@@ -80,16 +83,30 @@
     flex-wrap: wrap;  /* si adatta agli schermi piccoli */
 }
 
-.image-row img {
-    max-width: 50%;   /* riduce la larghezza a circa la metà */
+.image-row img,
+.image-row a img.same-size {
+    max-width: 300px; /* imposta la stessa larghezza massima per entrambe */
     height: auto;     /* mantiene proporzioni */
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    transition: transform 0.35s;
     display: block;
-    max-height: 200px; /* riduce anche l’altezza massima di metà */
 }
 
+/* Hover effetto su Paolo.jpg */
+.highlight-on-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight-on-hover:hover {
+    transform: scale(1.08); /* ingrandimento leggero */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4); /* evidenziazione */
+    cursor: pointer;
+}
+
+
+
+
+    
 
     }
     .image-row img:hover {
@@ -246,6 +263,7 @@
 
 </body>
 </html>
+
 
 
 
