@@ -86,3 +86,129 @@
     .image-row img:hover {
         transform:scale(1.03);
     }
+
+    /* LINK BOX */
+    .link-block {
+        text-align:center;
+        margin-top:20px;
+    }
+    .link-block a {
+        display:inline-block;
+        background:var(--primary);
+        color:white;
+        padding:14px 24px;
+        border-radius:10px;
+        margin-top:10px;
+        text-decoration:none;
+        font-weight:600;
+        font-size:1.05rem;
+        transition:0.3s;
+        box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
+    .link-block a:hover {
+        background:var(--accent);
+        transform:translateY(-4px);
+    }
+
+    /* FOOTER */
+    footer {
+        text-align:center;
+        padding:30px;
+        font-size:0.95rem;
+        color:#555;
+        margin-top:50px;
+    }
+    footer a {
+        color:var(--primary);
+        margin:0 8px;
+        text-decoration:none;
+        font-weight:600;
+    }
+    footer a:hover {
+        text-decoration:underline;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+        from {opacity:0; transform:translateY(20px);}
+        to   {opacity:1; transform:translateY(0);}
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Paolo Dell'Aversana</h1>
+    <p>Consulenze e Formazione in Deep Learning e Modelli di Intelligenza Artificiale Bio-Ispirati</p>
+</header>
+
+<!-- SEZIONE CHI SONO -->
+<section>
+    <h2>Chi sono</h2>
+    <p>Geologo, Fisico e innovatore nel campo dell'intelligenza artificiale, autore di nuovi paradigmi di IA "bio-ispirati" e sviluppatore di approcci multidisciplinari per l'ottimizzazione dei processi aziendali e industriali.</p>
+
+    <div class="image-row">
+        <img src="GA_fin.jpg" alt="Bio-inspired Approach" />
+    </div>
+</section>
+
+<!-- SEZIONE ATTIVITÀ -->
+<section>
+    <h2>Attività e Linee di Ricerca</h2>
+    <ul>
+        <li>Modelli di Intelligenza Artificiale bio-ispirati e reti neurali di nuova generazione (esempio: Mycelial_Net)</li>
+        <li>Ottimizzazione stocastica supportata da Reinforcement Learning "dopaminergico"</li>
+        <li>Approcci predittivi e prescrittivi multidisciplinari</li>
+        <li>Analisi multi-modale e classificazione automatica di segnali naturali, antropici, immagini e altri dati</li>
+        <li>Scienze della Complessità, con applicazioni pratiche</li>
+        <li>Formazione professionale per manager e tecnici su AI e Machine Learning (classico e bio-ispirato)</li>
+    </ul>
+</section>
+
+<!-- SEZIONE MYCELIAL_NET -->
+<section>
+    <h2>Modelli di Intelligenza Artificiale "bio-ispirati", Self-Aware Deep Learning e Mycelial_Net</h2>
+    <p>I modelli di Intelligenza Artificiale "bio-ispirati" riproducono principi organizzativi presenti in natura — come le reti di micelio dei funghi — per ottenere sistemi di apprendimento più adattivi, resilienti e capaci di auto-organizzarsi. MycelialNet, da me sviluppato, è un paradigma che integra connessioni dinamiche, ridondanza intelligente e auto-consapevolezza computazionale per migliorare stabilità, efficienza e capacità predittive.</p>
+    <p>Rispetto ai modelli tradizionali, questi approcci introducono vantaggi pratici come maggiore robustezza in presenza di rumore, miglior generalizzazione, adattabilità ai dati complessi e possibilità di ridurre costi computazionali attraverso strutture di rete più naturali e meno rigide.</p>
+</section>
+
+<!-- LINK AI TRE DOCUMENTI -->
+<div class="link-block">
+    <a href="applicazioni_mediche.html">APPLICAZIONI DI BIO-INSPIRED AI NELLA DIAGNOSI MEDICA</a><br>
+    <a href="riconoscimento_immagini.html">RICONOSCIMENTO E CLASSIFICAZIONE DI IMMAGINI</a><br>
+    <a href="dr_management_complessita.html">MANAGEMENT DELLA COMPLESSITA'</a>
+</div>
+
+<!-- CONTATTI -->
+<section>
+    <h2>Contatti</h2>
+    <p>Per informazioni, collaborazioni o richieste di formazione professionale:</p>
+    <p><strong>Email:</strong> <a href="mailto:dellaversanapaolo@gmail.com">dellaversanapaolo@gmail.com</a></p>
+</section>
+
+<!-- PUBBLICAZIONI -->
+<section>
+    <h2>Pubblicazioni</h2>
+    <p>Le mie pubblicazioni scientifiche complete sono consultabili attraverso i seguenti profili:</p>
+    <ul>
+        <li><a href="https://scholar.google.com/citations?user=zGxZsJ8AAAAJ&hl=it" target="_blank">Google Scholar - Paolo Dell'Aversana</a></li>
+        <li><a href="https://www.researchgate.net/profile/Paolo-Dellaversana" target="_blank">ResearchGate - Paolo Dell'Aversana</a></li>
+        <li><a href="https://www.amazon.it/stores/author/B019II3JNO" target="_blank">Amazon Author Page - Paolo Dell'Aversana</a></li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p><em>Disclaimer</em>: Questo sito rappresenta esclusivamente una presentazione dell'attività intellettuale e scientifica dell'autore. Ogni eventuale attività professionale sarà regolata separatamente secondo le normative vigenti.</p>
+    <p>
+        <a href="https://scholar.google.com/citations?user=zGxZsJ8AAAAJ&hl=it" target="_blank">Google Scholar</a> |
+        <a href="https://www.researchgate.net/profile/Paolo-Dellaversana" target="_blank">ResearchGate</a> |
+        <a href="https://www.amazon.it/stores/author/B019II3JNO" target="_blank">Amazon Author Page</a>
+    </p>
+</footer>
+
+</body>
+</html>
