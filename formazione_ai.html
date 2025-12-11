@@ -1,0 +1,233 @@
+<!--
+Snippet da inserire nella tua Index.html per collegare questa pagina:
+<a href="Formazione-AI.html">Formazione in Intelligenza Artificiale</a>
+-->
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Percorsi di Formazione in Intelligenza Artificiale</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7}
+    body{font-family:Inter,ui-sans-serif,system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:linear-gradient(180deg,#061025 0%, #071427 60%);color:#e6eef6}
+    .wrap{max-width:1100px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    header h1{margin:0;font-size:28px}
+    header p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+    h2{margin-top:0}
+    ul{margin:8px 0 16px 20px;color:var(--muted)}
+    .pill{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;margin-right:8px;font-size:13px}
+    .module{margin-bottom:14px}
+    code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:6px;color:var(--accent)}
+    .level{font-weight:600;margin-bottom:6px}
+    .cta{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#1f5d7a,#275d93);text-decoration:none;color:white}
+    footer{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);font-size:14px}
+    .sublink{color:var(--accent);text-decoration:none}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Percorsi di Formazione in Intelligenza Artificiale</h1>
+        <p>Programma modulare per studenti, professionisti, manager, insegnanti e dirigenti — pronto per erogazione in presenza o online.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <h2>Panoramica & Obiettivi</h2>
+        <p style="color:var(--muted)">Questa pagina elenca i contenuti consigliati e i percorsi didattici per costruire un'offerta formativa completa in Intelligenza Artificiale (IA). Ogni modulo include competenze chiave, esempi pratici e suggerimenti per esercitazioni e progetti.</p>
+
+        <h2>Pubblico target</h2>
+        <div class="pill">Studenti</div><div class="pill">Professionisti</div><div class="pill">Manager</div><div class="pill">Dirigenti</div><div class="pill">Insegnanti</div>
+
+        <h2>Struttura consigliata dei percorsi</h2>
+        <ol style="color:var(--muted)">
+          <li><strong>Base (Fondamenti)</strong> — matematica di base, programmazione, concetti di ML.</li>
+          <li><strong>Intermedio (Practitioner)</strong> — pipeline ML, modelli classici, progetto applicato.</li>
+          <li><strong>Avanzato (Specialist)</strong> — Deep Learning, Transformers, RL, produzione e MLOps.</li>
+          <li><strong>Executive / Manageriale</strong> — strategia, gestione progetti IA, governance, etica.</li>
+        </ol>
+
+        <h2>Moduli dettagliati</h2>
+
+        <div class="module">
+          <div class="level">1. Introduzione al Machine Learning</div>
+          <ul>
+            <li>Definizione di ML e differenza con IA generale</li>
+            <li>Tipologie: <em>supervised</em>, <em>unsupervised</em>, <em>semi-supervised</em>, <em>self-supervised</em>, <em>transfer learning</em>, online learning, few-shot learning</li>
+            <li>Pipeline ML: raccolta dati, pulizia, feature engineering, training, validazione, deployment</li>
+            <li>Metriche comuni: accuracy, precision, recall, F1, AUC, RMSE</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">2. Algoritmi classici e tecniche</div>
+          <ul>
+            <li>Regressione lineare e logistica</li>
+            <li>Alberi decisionali, Random Forest, Gradient Boosting (XGBoost, LightGBM, CatBoost)</li>
+            <li>SVM, k-NN, clustering (k-means, DBSCAN), PCA</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">3. Deep Learning</div>
+          <ul>
+            <li>Reti dense, convoluzionali (CNN), ricorrenti (RNN / LSTM), e Transformers</li>
+            <li>Architetture moderne: ResNet, U-Net, BERT, Vision Transformers</li>
+            <li>Training: ottimizzatori, scheduling, regolarizzazione, data augmentation</li>
+            <li>Task: visione, NLP, audio, time-series</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">4. Reinforcement Learning</div>
+          <ul>
+            <li>Concetti base: agent, ambiente, reward, policy, value function</li>
+            <li>Algoritmi: Q-learning, DQN, Policy Gradient, Actor-Critic, PPO</li>
+            <li>Applicazioni pratiche e simulazioni</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">5. Tools e linguaggi</div>
+          <ul>
+            <li><code>Python</code> — ecosistema essenziale (NumPy, pandas, scikit-learn)</li>
+            <li>Deep learning: <code>PyTorch</code>, <code>TensorFlow / Keras</code></li>
+            <li>Notebook: Jupyter, Google Colab; IDEs: VS Code, PyCharm</li>
+            <li>Versioning: Git, GitHub/GitLab
+            </li>
+            <li>MLOps: Docker, MLflow, DVC, CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">6. Cloud e ambienti online</div>
+          <ul>
+            <li>Google Colab — ambiente gratuito per notebook con GPU/TPU (ottimo per lezioni pratiche)</li>
+            <li>Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure — servizi compute, storage e ML managed</li>
+            <li>Piattaforme per learning: Kaggle, Hugging Face Hub, Paperspace, Gradient</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">7. Applicazioni ed esempi pratici</div>
+          <ul>
+            <li>Classificazione immagini (es. diagnostica, microscopia, geologia)</li>
+            <li>Rilevamento oggetti e segmentazione (es. analisi satellitare, isolamento anomalie)</li>
+            <li>Analisi del linguaggio naturale (estrazione informazioni, chatbot, summarization)</li>
+            <li>Time-series forecasting (finanza, produzione, monitoraggio sensori)</li>
+            <li>Reinforcement learning per controllo e ottimizzazione</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">8. Progetti capstone ed esercitazioni</div>
+          <ul>
+            <li>Progetti individuali e di gruppo con dataset reali</li>
+            <li>Esempi: classificazione minerali tramite immagini, inversione di segnali, forecasting di serie temporali, prototipo di chatbot</li>
+            <li>Valutazione: report tecnico, presentazione, codice documentato, Reproducibility</li>
+          </ul>
+        </div>
+
+        <div class="module">
+          <div class="level">9. Etica, privacy e governance</div>
+          <ul>
+            <li>Bias e fairness, privacy dei dati, GDPR</li>
+            <li>Spiegabilità (XAI), rischi e limiti dei modelli</li>
+            <li>Linee guida per governance IA in azienda</li>
+          </ul>
+        </div>
+
+        <h2>Esempio di syllabus per livelli</h2>
+        <details class="card" style="padding:12px;margin-bottom:12px;color:var(--muted)">
+          <summary style="cursor:pointer">Base — 8 settimane (esempio)</summary>
+          <ul>
+            <li>Settimane 1-2: Python & basi di statistica</li>
+            <li>Settimane 3-4: ML supervisionato (regressione, classificazione)</li>
+            <li>Settimane 5-6: Modelli classici e pipeline ML</li>
+            <li>Settimane 7-8: Mini-progetto e presentazione</li>
+          </ul>
+        </details>
+
+        <details class="card" style="padding:12px;color:var(--muted)">
+          <summary style="cursor:pointer">Advanced — 12 settimane (esempio)</summary>
+          <ul>
+            <li>Deep Learning pratico — CNN, RNN, Transformers</li>
+            <li>Reinforcement Learning e simulazioni</li>
+            <li>MLOps e deployment in cloud</li>
+            <li>Progetto capstone con dataset reale</li>
+          </ul>
+        </details>
+
+        <h2>Materiali & Risorse suggerite</h2>
+        <ul>
+          <li>Libri introduttivi e avanzati (es. "Pattern Recognition and Machine Learning", "Deep Learning" di Goodfellow)</li>
+          <li>Corsi online da integrare (MOOCs): Coursera, edX, fast.ai — utili come materiale di riferimento</li>
+          <li>Repos GitHub con notebook di esempio; dataset pubblici (Kaggle, UCI, Hugging Face Datasets)</li>
+        </ul>
+
+        <h2>Valutazione & certificazione</h2>
+        <ul>
+          <li>Quiz e assessment automatici</li>
+          <li>Valutazione progetto con rubriche</li>
+          <li>Badge o certificato interno; suggerimenti per certificazioni esterne (Google, AWS, etc.)</li>
+        </ul>
+
+        <h2>Note pratiche per l'erogazione online</h2>
+        <ul>
+          <li>Usa Google Colab per le esercitazioni pratiche per rimuovere barriere di setup</li>
+          <li>Prepara notebook con esercizi passo-passo e dataset ridotti</li>
+          <li>Programma sessioni Q&A e code review dal vivo</li>
+        </ul>
+
+        <p style="margin-top:10px"><a class="cta" href="#contact">Contattami per personalizzare il percorso</a></p>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <ul style="color:var(--muted)">
+            <li>Snippet per Index.html incluso in cima al file</li>
+            <li>Suggerimento: offri percorsi modulari vendibili come pacchetti (es. 4, 8, 12 settimane)</li>
+            <li>Struttura prezzi: base, professional, executive</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Checklist prima di erogare</h3>
+          <ul style="color:var(--muted)">
+            <li>Materiali didattici consegnati (slide + notebook)</li>
+            <li>Ambiente Colab pronto con GPU opzionale</li>
+            <li>Repository Git con esercizi e soluzioni</li>
+            <li>Piano di valutazione e certificati</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Contatti</h3>
+          <p style="color:var(--muted)">Per personalizzare i contenuti o richiedere un preventivo: <a class="sublink" href="#contact">invia una richiesta</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer id="contact">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>Come aggiungere il collegamento alla tua Index.html</strong>
+          <p style="color:var(--muted);margin:6px 0">Apri <code>Index.html</code> e inserisci l'anchor seguente dove preferisci menù o footer: <br><code>&lt;a href="Formazione-AI.html"&gt;Formazione in Intelligenza Artificiale&lt;/a&gt;</code></p>
+        </div>
+        <div style="text-align:right;color:var(--muted)">
+          <p>File generato per la tua pagina secondaria — personalizza contenuti e tempistiche secondo il target.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
